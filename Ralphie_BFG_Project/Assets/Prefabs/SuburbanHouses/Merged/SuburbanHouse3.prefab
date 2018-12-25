@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 7109810590856817886}
   - component: {fileID: 117434801884319896}
   - component: {fileID: 4070282394400974280}
-  m_Layer: 0
+  - component: {fileID: 5191202206383607461}
+  - component: {fileID: 6783063774389809641}
+  m_Layer: 10
   m_Name: default
-  m_TagString: Untagged
+  m_TagString: HouseDestruction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,6 +83,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5191202206383607461
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3531414514702391593}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1331809, y: 1.442801, z: 3.103181}
+  m_Center: {x: 1.0365905, y: 0.7214005, z: 0.051590502}
+--- !u!114 &6783063774389809641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3531414514702391593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cbb3424cde194eb09745c8e4d5ea7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyedVersion: {fileID: 7477863177918335267, guid: 08163abefe0f34b5184430fb8b364be6,
+    type: 3}
 --- !u!1 &8506578387698016124
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,9 +119,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1477242382178966025}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SuburbanHouse3
-  m_TagString: Untagged
+  m_TagString: HouseDestruction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +133,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8506578387698016124}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 3.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

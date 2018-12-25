@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 3382044765480176037}
   - component: {fileID: 2290698452263422702}
   - component: {fileID: 6626604590666068094}
-  m_Layer: 0
+  - component: {fileID: 1909062416678604654}
+  - component: {fileID: 2587984090692998541}
+  m_Layer: 10
   m_Name: default
-  m_TagString: Untagged
+  m_TagString: HouseDestruction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +61,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: 9063c2656f400384788adb11ae167eaf, type: 2}
   - {fileID: 2100000, guid: 9063c2656f400384788adb11ae167eaf, type: 2}
-  - {fileID: 2100000, guid: 9e0ad46dfe8c14c4ca13ec382fd2318b, type: 2}
+  - {fileID: 2100000, guid: 3cedf92cfda76c3418023a4f6348cb00, type: 2}
   - {fileID: 2100000, guid: f838d5d425814854192e22aed18af46b, type: 2}
   - {fileID: 2100000, guid: d2835759f6f36f547a346fcddadf8464, type: 2}
   m_StaticBatchInfo:
@@ -81,6 +83,33 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1909062416678604654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861648340568863246}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.3000002, y: 2.664202, z: 3.420374}
+  m_Center: {x: 0.99999994, y: 1.332101, z: 0}
+--- !u!114 &2587984090692998541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4861648340568863246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cbb3424cde194eb09745c8e4d5ea7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyedVersion: {fileID: 6478203409123007036, guid: e505be4b69a7540bf814f0103ef84839,
+    type: 3}
 --- !u!1 &5018185672634628592
 GameObject:
   m_ObjectHideFlags: 0
@@ -90,9 +119,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6360636278002859191}
-  m_Layer: 0
-  m_Name: SuburbanHouse9
-  m_TagString: Untagged
+  m_Layer: 10
+  m_Name: SuburbanHouse4
+  m_TagString: HouseDestruction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +133,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5018185672634628592}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: -7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

@@ -9,9 +9,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4306369295755836222}
-  m_Layer: 0
-  m_Name: SuburbanHouse10
-  m_TagString: Untagged
+  m_Layer: 10
+  m_Name: SuburbanHouse5
+  m_TagString: HouseDestruction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -42,9 +42,11 @@ GameObject:
   - component: {fileID: 1481323169488657207}
   - component: {fileID: 5069463639102226599}
   - component: {fileID: 8332115975650236149}
-  m_Layer: 0
+  - component: {fileID: 866474453313826044}
+  - component: {fileID: 574407936903707339}
+  m_Layer: 10
   m_Name: default
-  m_TagString: Untagged
+  m_TagString: HouseDestruction
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,7 +92,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 2100000, guid: 9063c2656f400384788adb11ae167eaf, type: 2}
   - {fileID: 2100000, guid: 9063c2656f400384788adb11ae167eaf, type: 2}
-  - {fileID: 2100000, guid: 9e0ad46dfe8c14c4ca13ec382fd2318b, type: 2}
+  - {fileID: 2100000, guid: 3cedf92cfda76c3418023a4f6348cb00, type: 2}
   - {fileID: 2100000, guid: d2835759f6f36f547a346fcddadf8464, type: 2}
   - {fileID: 2100000, guid: f838d5d425814854192e22aed18af46b, type: 2}
   m_StaticBatchInfo:
@@ -112,3 +114,30 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &866474453313826044
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5575775517921787392}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.1961758, y: 2.442801, z: 3.3101876}
+  m_Center: {x: 0.9980877, y: 1.2214005, z: 0.9449067}
+--- !u!114 &574407936903707339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5575775517921787392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cbb3424cde194eb09745c8e4d5ea7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyedVersion: {fileID: 7638949804956092235, guid: 4d55b5f29cd27453a8d29fad88c53e88,
+    type: 3}

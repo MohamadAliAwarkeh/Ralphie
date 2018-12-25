@@ -2,14 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
+public enum PlayerState
+{
+    Idle,
+    WalkingAndActions,
+}
 
 public class PlayerController : MonoBehaviour
 {
 
     //Public Variables
     [Header("Player Variables")]
-    public float playerSpeed;
+    public float playerSpeed; 
+    public PlayerState playerState = PlayerState.Idle;
 
     [Header("Script References")]
     public FollowPlayer followPlayer;
@@ -26,17 +31,33 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        PlayerMovement();
+        switch (playerState)
+        {
+            case PlayerState.Idle:
+                //The states a player can have during idle
+                Idle();
+                break;
+
+            case PlayerState.WalkingAndActions:
+                //The states a player can have during Walking and Actions
+                PlayerMovement();
+                break;
+        }
 
         if (Input.GetKey(KeyCode.JoystickButton0))
         {
-            followPlayer.ComeToPlayer();
+            //followPlayer.ComeToPlayer();
         }
     }
 
     void FixedUpdate()
     {
         myRB.velocity = moveVelocity;
+    }
+
+    void Idle()
+    {
+
     }
 
     void PlayerMovement()
