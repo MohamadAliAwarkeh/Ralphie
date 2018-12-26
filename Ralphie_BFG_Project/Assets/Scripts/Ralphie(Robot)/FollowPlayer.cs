@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class FollowPlayer : MonoBehaviour
 {
@@ -16,20 +17,23 @@ public class FollowPlayer : MonoBehaviour
 
     //Private Variables
     private Transform target;
+    private NavMeshAgent myNavMesh;
 
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        myNavMesh = GetComponent<NavMeshAgent>();
     }
 
     void Update()
     {
+        HouseDestruction();
+
         if (Vector3.Distance(transform.position, target.position) > stoppingDistance)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            speed = 0;
         }
-
-        HouseDestruction();
     }
 
     public void ComeToPlayer()

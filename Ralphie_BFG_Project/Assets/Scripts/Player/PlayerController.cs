@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.JoystickButton0))
         {
-            //followPlayer.ComeToPlayer();
+            followPlayer.speed = 6;
         }
     }
 
