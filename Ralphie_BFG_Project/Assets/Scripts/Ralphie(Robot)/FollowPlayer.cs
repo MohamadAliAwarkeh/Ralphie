@@ -14,6 +14,7 @@ public class FollowPlayer : MonoBehaviour
     [Header("House Destruction")]
     public float destructionRadius;
     public float explosionForce;
+    public int housesDestroyed;
 
     //Private Variables
     private Transform target;
@@ -33,6 +34,11 @@ public class FollowPlayer : MonoBehaviour
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
             speed = 0;
+        }
+
+        if (housesDestroyed == 5)
+        {
+
         }
     }
 
@@ -58,6 +64,7 @@ public class FollowPlayer : MonoBehaviour
             if (dest != null)
             {
                 dest.Destroy();
+                housesDestroyed++;
             }
         }
 

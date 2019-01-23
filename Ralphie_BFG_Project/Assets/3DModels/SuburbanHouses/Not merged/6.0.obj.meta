@@ -30,7 +30,32 @@ ModelImporter:
     4300002: garage_wide_3
     4300004: roof_barn_1
     4300006: roof_barn_2
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: border
+    second: {fileID: 2100000, guid: 9063c2656f400384788adb11ae167eaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bricks
+    second: {fileID: 2100000, guid: 9063c2656f400384788adb11ae167eaf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: element
+    second: {fileID: 2100000, guid: d2835759f6f36f547a346fcddadf8464, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: f838d5d425814854192e22aed18af46b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roofJade
+    second: {fileID: 2100000, guid: 3cedf92cfda76c3418023a4f6348cb00, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
                 break;
         }
 
-        if (Input.GetKey(KeyCode.JoystickButton0))
+        if (Input.GetKey(KeyCode.JoystickButton0) || Input.GetKey(KeyCode.Space))
         {
             followPlayer.speed = 6;
         }
