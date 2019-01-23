@@ -79,4 +79,12 @@ public class FollowPlayer : MonoBehaviour
             }
         }
     }
+
+    private void OnCollisionEnter(Collision theCol)
+    {
+        if (theCol.gameObject.CompareTag("HouseDestruction"))
+        {
+            
+        }
+    }
 }
