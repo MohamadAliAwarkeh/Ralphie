@@ -6,6 +6,8 @@ TagManager:
   tags:
   - FloorOutside
   - HouseDestruction
+  - Wall
+  - Tree
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - OutsideGround
   - Houses
   - Player
-  - 
+  - DogEars
   - 
   - 
   - 

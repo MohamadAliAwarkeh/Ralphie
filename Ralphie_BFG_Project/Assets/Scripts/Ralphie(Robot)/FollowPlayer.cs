@@ -80,11 +80,45 @@ public class FollowPlayer : MonoBehaviour
         }
     }
 
+    void TreeDestruction()
+    {
+        //Initially we will make an array which searches through each object that is colliding with the player
+        //within the specified bounderies, and then we will call another script in which we destroy the
+        //original object and instantiate a broken version, then we search for colliders again, but this
+        //time for the new destroyed buildings, and add force to them
+        Collider[] collidersToDestroy = Physics.OverlapSphere(transform.position, destructionRadius);
+
+        foreach (Collider nearbyObject in collidersToDestroy)
+        {
+            TreeDestructable dest = nearbyObject.GetComponent<TreeDestructable>();
+            if (dest != null)
+            {
+                dest.Destroy();
+            }
+        }
+
+        Collider[] collidersToMove = Physics.OverlapSphere(transform.position, destructionRadius);
+
+        foreach (Collider nearbyObject in collidersToMove)
+        {
+            Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
+            if (rb != null)
+            {
+                rb.AddExplosionForce(explosionForce, transform.position, destructionRadius);
+            }
+        }
+    }
+
     private void OnCollisionEnter(Collision theCol)
     {
         if (theCol.gameObject.CompareTag("HouseDestruction"))
         {
-            
+            HouseDestruction();
+        }
+
+        if (theCol.gameObject.CompareTag("Tree"))
+        {
+            TreeDestruction();
         }
     }
 }
